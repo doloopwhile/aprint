@@ -1,0 +1,10 @@
+ruby-awesome_print
+
+*.pyc
+__pycache__
+*.egg-info/
+dist/
+build/
+*.swp
+*~
+
