@@ -21,7 +21,7 @@ Cloning the repository
 Example
 ========
 ::
-    >>> from aprint import pprint
+    >>> from aprint import pprint, pformat
     >>> data = [{"a": 1, "beta": 2.0, (1, 2):{'A','B','A','C'}}, lambda x:0, int]
     >>> pprint(data)
     [
@@ -38,7 +38,23 @@ Example
         [1] <lambda>()
         [2] int
     ]
-
+    >>> s = pformat(data)
+    >>> print(s)
+    [
+        [0] {
+            'a'   : 1
+            (1,
+             2): {
+                'A'
+                'B'
+                'C'
+            }
+            'beta': 2.0
+        }
+        [1] <lambda>()
+        [2] int
+    ]
+    
 URL
 ===
 PyPI: http://pypi.python.org/pypi/aprint/0.1
