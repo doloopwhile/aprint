@@ -39,6 +39,11 @@ Example
         [2] int
     ]
 
+URL
+===
+PyPI: http://pypi.python.org/pypi/aprint/0.1
+Github: https://github.com/doloopwhile/aprint
+
 License
 =======
 Copyright (c) 2012 OMOTO Kenji
