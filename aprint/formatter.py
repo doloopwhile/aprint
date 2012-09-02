@@ -282,6 +282,15 @@ class SetFormatter:
             return context.text()
         return context.text(type(aset).__name__, 'type')
     
+    def format_empty(self, aset, context):
+        text = context.text()
+        header = self.format_header(aset, context)
+        if header:
+            text += header
+            text += context.space()
+        text += "{}"
+        return text
+    
     def __call__(self, aset, context):
         if not aset:
             return self.format_empty(aset, context)
